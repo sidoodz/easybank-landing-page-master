@@ -1,0 +1,77 @@
+.Blog {
+    background-color: hsl(0, 0%, 98%);
+  
+    }
+    .blog-container{
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 65px 50px;
+      width: 85%;
+    
+    }
+  
+    .articles {
+      padding: 20px 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-gap: 20px;
+      margin: 0 auto;
+    }
+    .articles .articleBox {
+      overflow: hidden;
+      border-radius: 6px;
+      transition: 0.3s ease background-color;
+      background: white;
+    }
+    .Blog .articles .articleImg {
+      height: 200px;
+      overflow: hidden;
+    }
+    .Blog header {
+      padding: 30px 0;
+    }
+    .Blog header h1 {
+      font-weight: 500;
+      color: hsl(233, 26%, 24%);
+    }
+    .Blog.articles .articleImg img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      user-select: none;
+    }
+    .articles .articleBox .articleText {
+      padding: 15px;
+    }
+    .articles .articleBox .articleBy {
+      font-size: 10px;
+      color: hsl(233, 8%, 62%);
+      padding: 10px;
+    }
+    .articles .articleBox h4 {
+      color: hsl(233, 26%, 24%);
+      font-weight: 500;
+      padding: 0 7px;
+      cursor: pointer;
+      transition: 0.3s ease color;
+    }
+    .articles .articleBox .articlePara {
+      font-size: 13px;
+      color: hsl(233, 8%, 62%);
+      padding: 10px 0;
+    }
+    .articles .articleBox h4:hover {
+      color: hsla(136, 65%, 51%, 0.575);
+    }
+  
+    @media (max-width: 750px){
+  
+    .blog-container {
+      padding: 0%;
+      padding-top: 50px;
+      padding-bottom: 40px;
+    }
+    .Blog header {
+      text-align: center;
+  }
+  }

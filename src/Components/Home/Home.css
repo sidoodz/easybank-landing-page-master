@@ -1,0 +1,96 @@
+.heroSection {
+    height: 595px;
+    flex: 1 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(0, 0%, 98%);
+  }
+  .mockup {
+    background-image: url(/public/images/bg-intro-desktop.svg);
+    background-position: -36px -60px;
+    background-size: cover;
+    width: 50%;
+    background-repeat: no-repeat;
+  }
+  .heroSection .heroSection-container {
+    width: 35%;
+    margin: auto 5% auto 10%;
+  }
+  .mockup img {
+    width: 100%;
+    overflow: auto;
+    object-position: 95px 4px;
+    object-fit: cover;
+  }
+  .heroSection .heroSection-container .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .heroSection .heroSection-container .content h1 {
+    font-size: 50px;
+    color: hsl(233, 26%, 24%);
+    font-weight: 400;
+  }
+  .heroSection .heroSection-container .content p {
+    color: hsl(233, 8%, 62%);
+    margin-top: 20px;
+    line-height: 25px;
+  }
+  .request{
+    background: linear-gradient(to right ,hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border: none;
+    /* outline: none; */
+    display: grid;
+    width: 150px;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 40px;
+    margin: 20px 0;
+    cursor: pointer;
+  }
+  .request:hover{
+    opacity: 0.5;
+  }
+  
+  @media (max-width: 750px) {
+    .heroSection {
+      flex-direction: column-reverse;
+      padding-bottom: 40px;
+      height: auto;
+    }
+  
+    .mockup{
+      background-image: url(/public/images/bg-intro-mobile.svg);
+      background-size: cover;
+      background-position: center -70px;
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+    }
+    .mockup img {
+      width: 85%;
+      object-fit: cover;
+      object-position: center -106px;
+      height: auto;
+      margin: 0 auto;
+    }
+    .heroSection .heroSection-container {
+      width: 80%;
+      text-align: center;
+      display: flex;
+    }
+    .heroSection .heroSection-container .content {
+      align-items: center;
+    }
+    .heroSection .heroSection-container .content h1 {
+      font-size: 38px;
+    }
+    .heroSection .heroSection-container .content p {
+      width: 100%;
+      font-size: 13px;
+    }
+  }

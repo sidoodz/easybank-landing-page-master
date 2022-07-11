@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+:root {
+--DarkBlue: hsl(233, 26%, 24%)
+--LimeGreen: hsl(136, 65%, 51%)
+--BrightCyan: hsl(192, 70%, 51%)
+--GrayishBlue: hsl(233, 8%, 62%)
+--LightGrayishBlue: hsl(220, 16%, 96%)
+--VeryLightGray: hsl(0, 0%, 98%)
+--White: hsl(0, 0%, 100%)
+  /* --primary-one: hsl(136, 65%, 51%);
+  --primary-two: hsl(192, 70%, 51%);
+  --footer-color: hsl(233, 26%, 24%);
+  --text-body: hsl(233, 8%, 62%); */
+  --px-sm: 1.25rem;
+  --px-md: 5rem;
+  --px-lg: 8.75rem;
+}
+
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body{
+  Font-size: 18px;
+  position :reletive;
+  overflow-x: hidden;
+  width:100vw;
+  font-family:'Public Sans',sans-serif ;
+}
